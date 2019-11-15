@@ -28,9 +28,16 @@ public class ScenarioManager : MonoBehaviour
 
     void LoadCurrentScenario()
     {
-        for(int i = 0; i < scenarios.Count; ++i)
+        Debug.Log("Load scenario " + currentScenario.ToString() + ": " + scenarios[currentScenario].name);
+        for (int i = 0; i < scenarios.Count; ++i)
         {
             scenarios[i].SetActive(i == currentScenario);
         }
+    }
+
+    public void Quit()
+    {
+        Debug.Log("Quitting");
+        Application.Quit();
     }
 }
