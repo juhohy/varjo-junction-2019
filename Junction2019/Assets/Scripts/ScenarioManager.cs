@@ -20,7 +20,7 @@ public class ScenarioManager : MonoBehaviour
         }
     }
 
-    void NextScenario()
+    public void NextScenario()
     {
         currentScenario++;
         LoadCurrentScenario();
