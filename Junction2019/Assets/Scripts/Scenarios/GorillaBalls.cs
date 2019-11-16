@@ -15,7 +15,7 @@ public class GorillaBalls : MonoBehaviour
     public AnimationCurve ballCurve;
     public float ballCurveMultiplier = 1.0f;
     int currentThrow;
-    int throwAmount=10;
+    int throwAmount=11;
 
     public AnimateLocalPosition bear;
 
@@ -55,7 +55,7 @@ public class GorillaBalls : MonoBehaviour
         bool dir1to2 = true;
         while (currentThrow < throwAmount)
         {
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
 
             float throwVal = 0.0f;
             while (throwVal < 1.0f)

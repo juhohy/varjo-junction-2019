@@ -20,7 +20,10 @@ public class ImpulseOnGaze : MonoBehaviour
 
         if (GazeManager.instance.gazeHitTarget?.GetComponentInParent<ImpulseOnGaze>() == this)
         {
-            Vector3 dir = Quaternion.AngleAxis(randomRotationDeg, Vector3.up) * velocity * Random.Range(1.0f, randomFactor);
+            Vector3 dir = Quaternion.AngleAxis(
+                Random.Range(-randomRotationDeg, +randomRotationDeg), 
+                Vector3.up
+            ) * velocity * Random.Range(1.0f, randomFactor);
             GetComponent<Rigidbody>().AddForce(transform.TransformDirection(dir), ForceMode.VelocityChange);
             done = true;
         }
