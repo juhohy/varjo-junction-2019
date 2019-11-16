@@ -6,7 +6,8 @@ using UnityEngine.Video;
 public class StareTest : MonoBehaviour
 {
     public TalkAndDo description;
-    public TalkAndDo endcription;
+    public TalkAndDo endcriptionWin;
+    public TalkAndDo endcriptionLose;
     public GameObject video;
     public VideoPlayer videoPlayer;
     public float testTime = 240.0f;
@@ -23,14 +24,20 @@ public class StareTest : MonoBehaviour
     {
         video.SetActive(true);
         videoPlayer.Play();
-        Invoke("HideCards", testTime);
+        Invoke("HideVideo", testTime);
     }
 
     public void HideVideo()
     {
         videoPlayer.Stop();
         video.SetActive(false);
-        endcription.Perfrom();
+        if (timesBlinked <= 3)
+        {
+            endcriptionWin.Perfrom();
+        } else
+        {
+            endcriptionLose.Perfrom();
+        }
     }
 
     void Update()
