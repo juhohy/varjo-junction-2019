@@ -20,6 +20,7 @@ public class GorillaBalls : MonoBehaviour
     public TextMesh counterMesh;
     public GameObject counter;
     public int count;
+    private bool okPressed;
 
     void OnEnable()
     {
@@ -58,7 +59,7 @@ public class GorillaBalls : MonoBehaviour
                 yield return null;
             }
 
-            throwAmount++;
+            currentThrow++;
             dir1to2 = !dir1to2;
             yield return null;
         }
@@ -68,12 +69,20 @@ public class GorillaBalls : MonoBehaviour
 
     public void AddToCount()
     {
+        if (okPressed)
+        {
+            return;
+        }
         count++;
         counterMesh.text = count.ToString();
     }
 
     public void ReduceFromCount()
     {
+        if (okPressed)
+        {
+            return;
+        }
         count--;
         counterMesh.text = count.ToString();
     }
@@ -85,6 +94,15 @@ public class GorillaBalls : MonoBehaviour
 
     public void CountOk()
     {
+        if(okPressed)
+        {
+            return;
+        }
+        okPressed = true;
+        Invoke("CountOkDelayed", 0.5f);
+    }
+
+    private void CountOkDelayed() {
         if (count == throwAmount)
         {
             endcriptionCorrect.Perfrom();
