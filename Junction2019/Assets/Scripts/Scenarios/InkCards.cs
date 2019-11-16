@@ -7,6 +7,7 @@ public class InkCards : MonoBehaviour
     public TalkAndDo description;
     public TalkAndDo endcription;
     public GameObject cards;
+    public float time = 20.0f;
 
     private void OnEnable()
     {
@@ -17,12 +18,15 @@ public class InkCards : MonoBehaviour
     public void ShowCards()
     {
         cards.SetActive(true);
-        Invoke("HideCards", 10.0f);
+        Invoke("HideCards", time);
     }
 
     public void HideCards()
     {
         cards.SetActive(false);
+        InkCard longestGazeCard = GetCardWithLongestGaze();
+        longestGazeCard.transform.SetParent(null, true);
+        longestGazeCard.gameObject.SetActive(true);
         Debug.LogFormat("Card with longest gaze: {0}", GetCardWithLongestGaze()?.name);
         endcription.Perfrom();
     }
