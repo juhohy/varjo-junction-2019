@@ -73,4 +73,10 @@ public class GazeManager : MonoBehaviour
         }
         Debug.DrawLine(gazeRay.origin, gazeRay.origin + 10.0f * gazeRay.direction, debugColor);
     }
+
+    public bool BothEyesTracking() {
+        var data = VarjoPlugin.GetGaze();
+        return data.leftStatus != VarjoPlugin.GazeEyeStatus.EYE_INVALID 
+            && data.rightStatus != VarjoPlugin.GazeEyeStatus.EYE_INVALID;
+    }
 }

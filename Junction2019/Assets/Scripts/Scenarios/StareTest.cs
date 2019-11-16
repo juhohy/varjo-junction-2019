@@ -23,7 +23,7 @@ public class StareTest : MonoBehaviour
     {
         video.SetActive(true);
         videoPlayer.Play();
-        Invoke("HideCards", 240.0f);
+        Invoke("HideCards", testTime);
     }
 
     public void HideVideo()
@@ -35,10 +35,15 @@ public class StareTest : MonoBehaviour
 
     void Update()
     {
-        if(videoPlayer.isPlaying)
+        bool isTracking = GazeManager.instance.BothEyesTracking();
+        if(videoPlayer.isPlaying && !isTracking)
         {
+            videoPlayer.Stop();
             timesBlinked++;
-            // TODO: If gaze lost, restart video
+        } else if(!videoPlayer.isPlaying && isTracking)
+        {
+            videoPlayer.Play();
+            videoPlayer.time = 6.0;
         }
     }
 }

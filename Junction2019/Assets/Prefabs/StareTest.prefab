@@ -48,8 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: {fileID: 2988121809722972170}
   endcription: {fileID: 2988121809722972169}
-  video: {fileID: 1686238421195801527}
+  video: {fileID: 5639504386817929616}
   videoPlayer: {fileID: 4375023155002276199}
+  testTime: 240
 --- !u!114 &2988121809722972170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkClip: {fileID: 8300000, guid: 6a365e86ed7940148b37b235157c1b10, type: 3}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1686238421195801527}
   targetAction: ShowVideo
 --- !u!114 &2988121809722972169
 MonoBehaviour:
@@ -79,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkClip: {fileID: 8300000, guid: dce0959c3cf654145b40041f673a035b, type: 3}
   targetObject: {fileID: 0}
-  targetAction: HideVideo
+  targetAction: NextScenario
 --- !u!1 &5639504386817929616
 GameObject:
   m_ObjectHideFlags: 0
