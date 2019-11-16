@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ScenarioManager : MonoBehaviour
 {
+    public float startDelay = 10.0f;
+
     int currentScenario = 0;
     public List<GameObject> scenarios = new List<GameObject>();
     public List<AudioClip> scenarioMusics = new List<AudioClip>();
@@ -14,7 +16,7 @@ public class ScenarioManager : MonoBehaviour
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.loop = true;
         musicSource.volume = 0.3f;
-        LoadCurrentScenario();
+        Invoke("LoadCurrentScenario", startDelay);
     }
 
     void Update()
