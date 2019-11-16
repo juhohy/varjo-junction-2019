@@ -17,6 +17,7 @@ public class GorillaBalls : MonoBehaviour
     int currentThrow;
     int throwAmount;
 
+    public TextMesh counterMesh;
     public GameObject counter;
     public int count;
 
@@ -25,6 +26,7 @@ public class GorillaBalls : MonoBehaviour
         counter.SetActive(false);
         count = 0;
         currentThrow = 0;
+        counterMesh.text = count.ToString();
         ball.gameObject.SetActive(false);
         ball.position = ballPos1.position;
         description.Perfrom();
@@ -64,11 +66,13 @@ public class GorillaBalls : MonoBehaviour
     public void AddToCount()
     {
         count++;
+        counterMesh.text = count.ToString();
     }
 
     public void ReduceFromCount()
     {
         count--;
+        counterMesh.text = count.ToString();
     }
 
     void ShowCounter()
