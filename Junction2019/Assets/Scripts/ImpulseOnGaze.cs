@@ -26,6 +26,7 @@ public class ImpulseOnGaze : MonoBehaviour
             ) * velocity * Random.Range(1.0f, randomFactor);
             GetComponent<Rigidbody>().AddForce(transform.TransformDirection(dir), ForceMode.VelocityChange);
             done = true;
+            AudioManager.Instance.PlaySound("glass_klonk", transform.position);
         }
     }
 }

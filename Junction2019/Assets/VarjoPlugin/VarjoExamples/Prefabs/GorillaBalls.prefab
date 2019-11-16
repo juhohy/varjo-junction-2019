@@ -299,6 +299,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  audioClip: {fileID: 8300000, guid: e8d3c035f1023de429d3308f16ec6db5, type: 3}
 --- !u!114 &3130868582541986806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +623,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  audioClip: {fileID: 8300000, guid: e8d3c035f1023de429d3308f16ec6db5, type: 3}
 --- !u!114 &8000408473017252786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,6 +782,8 @@ MonoBehaviour:
   talkClip: {fileID: 8300000, guid: 2df70139730d9904494ff20926f3e8cf, type: 3}
   targetObject: {fileID: 4565137378097258720}
   targetAction: RunTest
+  waitBefore: 4
+  waitAfter: 0
 --- !u!114 &4565137378097258734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +799,8 @@ MonoBehaviour:
   talkClip: {fileID: 8300000, guid: c9158ba1e372b114eb254cd9cad875fc, type: 3}
   targetObject: {fileID: 4565137378097258720}
   targetAction: ShowCounter
+  waitBefore: 0
+  waitAfter: 0
 --- !u!114 &66091941000179709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +816,8 @@ MonoBehaviour:
   talkClip: {fileID: 8300000, guid: 73381fccb19b0994493f470e84e42d9e, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario
+  waitBefore: 0
+  waitAfter: 0
 --- !u!114 &5235711974148919431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,6 +833,8 @@ MonoBehaviour:
   talkClip: {fileID: 8300000, guid: befda3c5c64064446a02bc5ea99483ba, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario
+  waitBefore: 0
+  waitAfter: 0
 --- !u!1 &8031163247680679382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1097,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  audioClip: {fileID: 8300000, guid: e8d3c035f1023de429d3308f16ec6db5, type: 3}
 --- !u!114 &7904411930479489206
 MonoBehaviour:
   m_ObjectHideFlags: 0

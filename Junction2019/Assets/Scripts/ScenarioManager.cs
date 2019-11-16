@@ -43,10 +43,17 @@ public class ScenarioManager : MonoBehaviour
 
         if(scenarioMusics.Count > currentScenario)
         {
-            Debug.Log("Playing scenario music: " + scenarioMusics[currentScenario].name);
-            musicSource.clip = scenarioMusics[currentScenario];
-            musicSource.volume = scenarioMusicVolumes[currentScenario];
-            musicSource.Play();
+            if(scenarioMusics[currentScenario] != null)
+            { 
+                Debug.Log("Playing scenario music: " + scenarioMusics[currentScenario].name);
+                musicSource.clip = scenarioMusics[currentScenario];
+                musicSource.volume = scenarioMusicVolumes[currentScenario];
+                musicSource.Play();
+            }
+            else
+            {
+                musicSource.Stop();
+            }
         }
     }
 
