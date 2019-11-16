@@ -216,7 +216,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
   - {fileID: 8300000, guid: ecd5d9820cdf04746bed7254cb745e6c, type: 3}
   - {fileID: 8300000, guid: c252dd2ceebbf4b479404ffaa399bc9c, type: 3}
-  - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
+  - {fileID: 0}
   - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
   scenarioMusicVolumes:
   - 0.3
@@ -2790,6 +2790,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  audioClip: {fileID: 0}
 --- !u!1001 &4565137378100127159
 PrefabInstance:
   m_ObjectHideFlags: 0
