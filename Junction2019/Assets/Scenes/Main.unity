@@ -1454,6 +1454,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5971161732060619107}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1730986711 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5417155369326516958, guid: 9e51038b9d7939848aeb23ac7d053180,
+    type: 3}
+  m_PrefabInstance: {fileID: 930146294526458408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1747408518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2279,6 +2285,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5417155369326516958, guid: 9e51038b9d7939848aeb23ac7d053180,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e51038b9d7939848aeb23ac7d053180, type: 3}
 --- !u!23 &1025509402593446896
@@ -2651,11 +2662,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4565137378097258732, guid: a0c08789420f27a4abd8fbc74724fcc1,
-        type: 3}
-      propertyPath: bear
-      value: 
-      objectReference: {fileID: 2990501442536504459}
     - target: {fileID: 66091941000179709, guid: a0c08789420f27a4abd8fbc74724fcc1,
         type: 3}
       propertyPath: targetObject
@@ -2666,6 +2672,11 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 175085685}
+    - target: {fileID: 4565137378097258732, guid: a0c08789420f27a4abd8fbc74724fcc1,
+        type: 3}
+      propertyPath: bear
+      value: 
+      objectReference: {fileID: 2990501442536504459}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0c08789420f27a4abd8fbc74724fcc1, type: 3}
 --- !u!4 &5094306620480993053
@@ -2838,6 +2849,11 @@ PrefabInstance:
       propertyPath: scenarioManager
       value: 
       objectReference: {fileID: 175085686}
+    - target: {fileID: 6243395417564048954, guid: 0ba2d6913c8a80e46ba9994de4ce6a0a,
+        type: 3}
+      propertyPath: mooseAnimation
+      value: 
+      objectReference: {fileID: 1730986711}
     - target: {fileID: 6243395417564048956, guid: 0ba2d6913c8a80e46ba9994de4ce6a0a,
         type: 3}
       propertyPath: m_Enabled

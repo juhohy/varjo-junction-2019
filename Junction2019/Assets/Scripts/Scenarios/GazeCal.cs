@@ -8,6 +8,7 @@ public class GazeCal : MonoBehaviour
     public TalkAndDo description;
     public TalkAndDo endcription;
     public ScenarioManager scenarioManager;
+    public Animator mooseAnimation;
     bool calibrated = false;
 
     void OnEnable()
@@ -25,6 +26,7 @@ public class GazeCal : MonoBehaviour
             {
                 calibrated = true;
                 endcription.Perfrom();
+                mooseAnimation.enabled = true;
             }
         }
     }
