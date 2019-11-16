@@ -17,6 +17,8 @@ public class GorillaBalls : MonoBehaviour
     int currentThrow;
     int throwAmount=10;
 
+    public AnimateLocalPosition bear;
+
     public TextMesh counterMesh;
     public GameObject counter;
     public int count;
@@ -37,6 +39,13 @@ public class GorillaBalls : MonoBehaviour
     {
         ball.gameObject.SetActive(true);
         StartCoroutine("TestRoutine");
+
+        Invoke("DoBear", 4.7f);
+    }
+
+    void DoBear()
+    {
+        bear.Play();
     }
 
     IEnumerator TestRoutine()
@@ -89,6 +98,7 @@ public class GorillaBalls : MonoBehaviour
 
     void ShowCounter()
     {
+        ball.gameObject.SetActive(false);
         counter.SetActive(true);
     }
 

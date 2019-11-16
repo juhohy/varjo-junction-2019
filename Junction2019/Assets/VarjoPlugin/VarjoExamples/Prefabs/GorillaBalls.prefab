@@ -687,7 +687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4565137378097258735
 Transform:
   m_ObjectHideFlags: 0
@@ -761,6 +761,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ballCurveMultiplier: 1
+  bear: {fileID: 0}
   counterMesh: {fileID: 3712994122485435377}
   counter: {fileID: 598353978}
   count: 0
@@ -1024,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d374345bb9faa4ca796fd1a4807eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 8061093578736392533}
+  target: {fileID: 4565137378097258720}
   message: ReduceFromCount
 --- !u!114 &5545688422890594872
 MonoBehaviour:
@@ -1098,8 +1099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d374345bb9faa4ca796fd1a4807eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4565137378097258720}
-  message: CountOk
+  target: {fileID: 8061093578736392533}
+  message: Play
 --- !u!1 &8219977629611553686
 GameObject:
   m_ObjectHideFlags: 0
