@@ -8,6 +8,6 @@ public class Intro : MonoBehaviour
 
     void OnEnable()
     {
-        introTalk.Perfrom();
+        introTalk.Perform();
     }
 }

@@ -10,7 +10,7 @@ public class TalkAndDo : MonoBehaviour
     public float waitBefore = 0.0f;
     public float waitAfter = 0.0f;
 
-    public void Perfrom()
+    public void Perform()
     {
         Debug.Log("Talk: " + talkClip.name, gameObject);
         Invoke("PerformDelayed", waitBefore);

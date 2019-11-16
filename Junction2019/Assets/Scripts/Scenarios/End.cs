@@ -8,7 +8,7 @@ public class End : MonoBehaviour
 
     void OnEnable()
     {
-        endSpeech.Perfrom();
+        endSpeech.Perform();
     }
 
 }
