@@ -7,7 +7,7 @@ public class ScenarioManager : MonoBehaviour
     int currentScenario = 0;
     public List<GameObject> scenarios = new List<GameObject>();
 
-    void Start()
+    void Awake()
     {
         LoadCurrentScenario();
     }
