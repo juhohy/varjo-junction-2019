@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class ScenarioManager : MonoBehaviour
 {
+    public float startDelay = 10.0f;
+
     int currentScenario = 0;
     public List<GameObject> scenarios = new List<GameObject>();
     public List<AudioClip> scenarioMusics = new List<AudioClip>();
+    public List<float> scenarioMusicVolumes = new List<float>();
     AudioSource musicSource;
 
     void Awake()
     {
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.loop = true;
-        musicSource.volume = 0.3f;
-        LoadCurrentScenario();
+        Invoke("LoadCurrentScenario", startDelay);
     }
 
     void Update()
@@ -43,6 +45,7 @@ public class ScenarioManager : MonoBehaviour
         {
             Debug.Log("Playing scenario music: " + scenarioMusics[currentScenario].name);
             musicSource.clip = scenarioMusics[currentScenario];
+            musicSource.volume = scenarioMusicVolumes[currentScenario];
             musicSource.Play();
         }
     }

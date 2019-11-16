@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eecda952d0a007409b56b0f753302e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startDelay: 10
   scenarios:
   - {fileID: 979872101}
   - {fileID: 407923121}
@@ -217,6 +218,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c252dd2ceebbf4b479404ffaa399bc9c, type: 3}
   - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
   - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
+  scenarioMusicVolumes:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.1
+  - 0.3
+  - 0.3
 --- !u!4 &175085687
 Transform:
   m_ObjectHideFlags: 0
