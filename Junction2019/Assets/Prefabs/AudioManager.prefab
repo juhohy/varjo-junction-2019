@@ -43,6 +43,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b45e6559e0c01994cb8bcf2c2ba5eecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffects: []
+  soundEffects:
+  - {fileID: 8300000, guid: ad9974fc59d88cd4d897b2168477d6ec, type: 3}
+  - {fileID: 8300000, guid: 00dcb407ee882a846af50292d04208f9, type: 3}
+  - {fileID: 8300000, guid: c1a52abfbae76ec42b4538ce7802d325, type: 3}
+  - {fileID: 8300000, guid: 6a365e86ed7940148b37b235157c1b10, type: 3}
+  - {fileID: 8300000, guid: 0498106590740cb4e99098517fe8bc88, type: 3}
+  - {fileID: 8300000, guid: 97177c872bcc9ea4b809fa468784611e, type: 3}
+  - {fileID: 8300000, guid: befda3c5c64064446a02bc5ea99483ba, type: 3}
+  - {fileID: 8300000, guid: 2df70139730d9904494ff20926f3e8cf, type: 3}
+  - {fileID: 8300000, guid: c9158ba1e372b114eb254cd9cad875fc, type: 3}
+  - {fileID: 8300000, guid: 73381fccb19b0994493f470e84e42d9e, type: 3}
+  - {fileID: 8300000, guid: ec0fcd366dd3710428fc2ef8713451f5, type: 3}
+  - {fileID: 8300000, guid: 0318dd5500d2f9248b49cc9efa6da467, type: 3}
+  - {fileID: 8300000, guid: dce0959c3cf654145b40041f673a035b, type: 3}
   audioPrefab: {fileID: 1734750337971865773, guid: 3cb6ffb07a3d2b54c95a1cae2b7ea89c,
     type: 3}

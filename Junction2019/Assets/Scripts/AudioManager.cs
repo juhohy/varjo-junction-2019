@@ -13,17 +13,14 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
-    }
-
-    void Start ()
-    {
         for (int i = 0; i < 100; ++i)
         {
             GameObject audoObject = Instantiate(audioPrefab, transform) as GameObject;
             audioPoolObject.Add(audoObject);
         }
-	}
+
+        Instance = this;
+    }
 
     public void PlaySound(AudioClip audioClip, Vector3 pos, float volume = 1.0f, float pitch = 1.0f)
     {

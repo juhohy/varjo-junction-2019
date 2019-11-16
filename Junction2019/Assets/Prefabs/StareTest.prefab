@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1935031209429633471
 Transform:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 8300000, guid: 6a365e86ed7940148b37b235157c1b10, type: 3}
+  talkClip: {fileID: 8300000, guid: c1a52abfbae76ec42b4538ce7802d325, type: 3}
   targetObject: {fileID: 1686238421195801527}
   targetAction: ShowVideo
 --- !u!114 &2988121809722972169
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 8300000, guid: dce0959c3cf654145b40041f673a035b, type: 3}
+  talkClip: {fileID: 8300000, guid: 00dcb407ee882a846af50292d04208f9, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario
 --- !u!1 &5639504386817929616

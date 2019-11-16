@@ -13,6 +13,7 @@ public class ScenarioManager : MonoBehaviour
     {
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.loop = true;
+        musicSource.volume = 0.3f;
         LoadCurrentScenario();
     }
 

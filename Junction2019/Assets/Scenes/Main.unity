@@ -210,7 +210,13 @@ MonoBehaviour:
   - {fileID: 1678299808}
   - {fileID: 208326664}
   - {fileID: 1709642397}
-  scenarioMusics: []
+  scenarioMusics:
+  - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
+  - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
+  - {fileID: 8300000, guid: ecd5d9820cdf04746bed7254cb745e6c, type: 3}
+  - {fileID: 8300000, guid: c252dd2ceebbf4b479404ffaa399bc9c, type: 3}
+  - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
+  - {fileID: 8300000, guid: 730f890ea670c2f4fbcac5af330d2e49, type: 3}
 --- !u!4 &175085687
 Transform:
   m_ObjectHideFlags: 0
@@ -2432,11 +2438,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StareTest
-      objectReference: {fileID: 0}
-    - target: {fileID: 1686238421195801527, guid: f3de6e6a1ea77ba40907fdd39dceea10,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1935031209429633471, guid: f3de6e6a1ea77ba40907fdd39dceea10,
         type: 3}
