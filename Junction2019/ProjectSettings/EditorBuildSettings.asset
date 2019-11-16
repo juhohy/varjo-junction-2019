@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Varjo/Scenes/VarjoScene.unity
+    guid: 96282724417c6ee4892a194ceb427ffe
   m_configObjects: {}

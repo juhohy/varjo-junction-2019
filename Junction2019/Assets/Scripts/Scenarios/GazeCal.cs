@@ -29,4 +29,16 @@ public class GazeCal : MonoBehaviour
         }
     }
 
+    void RequestGazeCal()
+    {
+        Invoke("RequestGazeCalDelayed", 3.0f);
+    }
+
+    void RequestGazeCalDelayed() {
+        VarjoPlugin.GazeData data = VarjoPlugin.GetGaze();
+        if (data.status != VarjoPlugin.GazeStatus.VALID)
+        {
+            GetComponent<VarjoExample.VarjoGazeCalibrationRequest>().RequestGazeCalibration();
+        }
+    }
 }
