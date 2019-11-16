@@ -42,6 +42,11 @@ namespace VarjoExample
         void OnTriggerEnter(Collider other)
         {
             SetCollidingRigidbody(other);
+
+            if(other.tag == "Button")
+            {
+                other.SendMessage("Press");
+            }
         }
 
         void OnTriggerStay(Collider other)

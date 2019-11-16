@@ -8,7 +8,6 @@ public class TalkAndDo : MonoBehaviour
     public GameObject targetObject;
     public string targetAction;
 
-    // Start is called before the first frame update
     public void Perfrom()
     {
         Debug.Log("Talk: " + talkClip.name, gameObject);

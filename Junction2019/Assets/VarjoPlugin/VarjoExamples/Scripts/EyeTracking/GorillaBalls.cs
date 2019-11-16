@@ -5,7 +5,9 @@ using UnityEngine;
 public class GorillaBalls : MonoBehaviour
 {
     public TalkAndDo description;
-    public TalkAndDo endcription;
+    public TalkAndDo centeription;
+    public TalkAndDo endcriptionCorrect;
+    public TalkAndDo endcriptionWrong;
 
     public Transform ballPos1;
     public Transform ballPos2;
@@ -15,9 +17,13 @@ public class GorillaBalls : MonoBehaviour
     int currentThrow;
     int throwAmount;
 
+    public GameObject counter;
+    public int count;
 
     void OnEnable()
     {
+        counter.SetActive(false);
+        count = 0;
         currentThrow = 0;
         ball.gameObject.SetActive(false);
         ball.position = ballPos1.position;
@@ -29,20 +35,15 @@ public class GorillaBalls : MonoBehaviour
         StartCoroutine("TestRoutine");
     }
 
-    void EndTest()
-    {
-        endcription.Perfrom();
-    }
-
     IEnumerator TestRoutine()
     {
         bool dir1to2 = true;
         while (currentThrow < throwAmount)
         {
-            yield return new  WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.0f);
 
             float throwVal = 0.0f;
-            while(throwVal < 1.0f)
+            while (throwVal < 1.0f)
             {
                 ball.position = dir1to2 ? Vector3.Lerp(ballPos1.position, ballPos2.position, throwVal) : Vector3.Lerp(ballPos2.position, ballPos1.position, throwVal);
                 float height = ballCurve.Evaluate(throwVal) * ballCurveMultiplier;
@@ -57,5 +58,33 @@ public class GorillaBalls : MonoBehaviour
             yield return null;
         }
 
+        centeription.Perfrom();
+    }
+
+    public void AddToCount()
+    {
+        count++;
+    }
+
+    public void ReduceFromCount()
+    {
+        count--;
+    }
+
+    void ShowCounter()
+    {
+        counter.SetActive(true);
+    }
+
+    public void CountOk()
+    {
+        if (count == throwAmount)
+        {
+            endcriptionCorrect.Perfrom();
+        }
+        else
+        {
+            endcriptionWrong.Perfrom();
+        }
     }
 }
