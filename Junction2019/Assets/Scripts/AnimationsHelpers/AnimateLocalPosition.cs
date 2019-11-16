@@ -11,6 +11,8 @@ public class AnimateLocalPosition : MonoBehaviour
     public AnimationCurve Y = new AnimationCurve();
     public AnimationCurve Z = new AnimationCurve();
 
+    public AudioClip audioClip;
+
     float timer = 0.0f;
     Vector3 startValue = new Vector3();
 
@@ -47,6 +49,11 @@ public class AnimateLocalPosition : MonoBehaviour
 
     public void Play()
     {
+        if(audioClip)
+        {
+            AudioManager.Instance.PlaySound(audioClip, transform.position, 1.0f, Random.Range(0.95f, 1.05f));
+        }
+
         if (enabled)
         {
             Restart();
