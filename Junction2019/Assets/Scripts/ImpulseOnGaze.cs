@@ -6,6 +6,8 @@ using UnityEngine;
 public class ImpulseOnGaze : MonoBehaviour
 {
     public Vector3 velocity = Vector3.forward;
+    public float randomRotationDeg = 0.0f;
+    public float randomFactor = 1.0f;
     private bool done;
 
     private void Update()
@@ -18,7 +20,8 @@ public class ImpulseOnGaze : MonoBehaviour
 
         if (GazeManager.instance.gazeHitTarget?.GetComponentInParent<ImpulseOnGaze>() == this)
         {
-            GetComponent<Rigidbody>().AddForce(transform.TransformDirection(velocity), ForceMode.VelocityChange);
+            Vector3 dir = Quaternion.AngleAxis(randomRotationDeg, Vector3.up) * velocity * Random.Range(1.0f, randomFactor);
+            GetComponent<Rigidbody>().AddForce(transform.TransformDirection(dir), ForceMode.VelocityChange);
             done = true;
         }
     }

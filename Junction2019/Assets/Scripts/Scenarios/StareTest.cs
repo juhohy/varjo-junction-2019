@@ -43,7 +43,7 @@ public class StareTest : MonoBehaviour
         } else if(!videoPlayer.isPlaying && isTracking)
         {
             videoPlayer.Play();
-            videoPlayer.time = 6.0;
+            videoPlayer.time = 7.0;
         }
     }
 }

@@ -12,7 +12,7 @@ public class Moose : MonoBehaviour
     {
         if(GazeManager.instance.gazeHitTarget == col)
         {
-            lookingAt = 2.0f;
+            lookingAt = 1.5f;
         } else
         {
             lookingAt = Mathf.Max(0, lookingAt - Time.deltaTime);
