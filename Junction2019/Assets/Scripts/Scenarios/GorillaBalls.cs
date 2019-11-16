@@ -15,7 +15,7 @@ public class GorillaBalls : MonoBehaviour
     public AnimationCurve ballCurve;
     public float ballCurveMultiplier = 1.0f;
     int currentThrow;
-    int throwAmount;
+    int throwAmount=10;
 
     public TextMesh counterMesh;
     public GameObject counter;
@@ -34,11 +34,14 @@ public class GorillaBalls : MonoBehaviour
 
     void RunTest()
     {
+        ball.gameObject.SetActive(true);
         StartCoroutine("TestRoutine");
     }
 
     IEnumerator TestRoutine()
     {
+        Debug.Log("Test routine");
+
         bool dir1to2 = true;
         while (currentThrow < throwAmount)
         {
