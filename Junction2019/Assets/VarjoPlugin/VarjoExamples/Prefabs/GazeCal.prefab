@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: 0318dd5500d2f9248b49cc9efa6da467, type: 3}
   targetObject: {fileID: 6243395417564048958}
   targetAction: RequestGazeCalibration
 --- !u!114 &6243395417564048956
@@ -93,6 +93,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: ec0fcd366dd3710428fc2ef8713451f5, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario

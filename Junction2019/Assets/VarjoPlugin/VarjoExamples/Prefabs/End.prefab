@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830e35cef1c3ed848a1cc6d650c53bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endSpeech: {fileID: 0}
+  endSpeech: {fileID: 828522025865806966}
 --- !u!114 &828522025865806966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,6 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: dce0959c3cf654145b40041f673a035b, type: 3}
   targetObject: {fileID: 0}
   targetAction: Quit

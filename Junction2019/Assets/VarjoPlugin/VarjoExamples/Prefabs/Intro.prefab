@@ -57,6 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: 6a365e86ed7940148b37b235157c1b10, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario

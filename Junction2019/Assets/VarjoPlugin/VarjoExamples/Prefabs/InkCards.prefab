@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: 97177c872bcc9ea4b809fa468784611e, type: 3}
   targetObject: {fileID: 7594853532167123131}
   targetAction: ShowCards
 --- !u!114 &7594853532167123135
@@ -106,6 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be3345d0dfe5a42bf06781d9c5077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkClip: {fileID: 0}
+  talkClip: {fileID: 8300000, guid: 0498106590740cb4e99098517fe8bc88, type: 3}
   targetObject: {fileID: 0}
   targetAction: NextScenario
