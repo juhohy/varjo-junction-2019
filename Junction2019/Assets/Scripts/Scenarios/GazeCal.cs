@@ -14,7 +14,7 @@ public class GazeCal : MonoBehaviour
     void OnEnable()
     {
         calibrated = false;
-        description.Perfrom();
+        description.Perform();
     }
 
     void Update()
@@ -25,7 +25,7 @@ public class GazeCal : MonoBehaviour
             if(data.status == VarjoPlugin.GazeStatus.VALID)
             {
                 calibrated = true;
-                endcription.Perfrom();
+                endcription.Perform();
                 mooseAnimation.enabled = true;
             }
         }

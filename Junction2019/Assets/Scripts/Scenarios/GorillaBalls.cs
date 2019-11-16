@@ -32,7 +32,7 @@ public class GorillaBalls : MonoBehaviour
         counterMesh.text = count.ToString();
         ball.gameObject.SetActive(false);
         ball.position = ballPos1.position;
-        description.Perfrom();
+        description.Perform();
     }
 
     void RunTest()
@@ -73,7 +73,7 @@ public class GorillaBalls : MonoBehaviour
             yield return null;
         }
 
-        centeription.Perfrom();
+        centeription.Perform();
     }
 
     public void AddToCount()
@@ -115,11 +115,11 @@ public class GorillaBalls : MonoBehaviour
     private void CountOkDelayed() {
         if (count == throwAmount)
         {
-            endcriptionCorrect.Perfrom();
+            endcriptionCorrect.Perform();
         }
         else
         {
-            endcriptionWrong.Perfrom();
+            endcriptionWrong.Perform();
         }
     }
 }

@@ -12,7 +12,7 @@ public class InkCards : MonoBehaviour
     private void OnEnable()
     {
         cards.SetActive(false);
-        description.Perfrom();
+        description.Perform();
     }
 
     public void ShowCards()
@@ -28,7 +28,7 @@ public class InkCards : MonoBehaviour
         longestGazeCard.transform.SetParent(null, true);
         longestGazeCard.gameObject.SetActive(true);
         Debug.LogFormat("Card with longest gaze: {0}", GetCardWithLongestGaze()?.name);
-        endcription.Perfrom();
+        endcription.Perform();
     }
 
     public InkCard GetCardWithLongestGaze()

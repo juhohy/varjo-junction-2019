@@ -17,7 +17,7 @@ public class StareTest : MonoBehaviour
     {
         timesBlinked = 0;
         video.SetActive(false);
-        description.Perfrom();
+        description.Perform();
     }
 
     public void ShowVideo()
@@ -33,10 +33,10 @@ public class StareTest : MonoBehaviour
         video.SetActive(false);
         if (timesBlinked <= 3)
         {
-            endcriptionWin.Perfrom();
+            endcriptionWin.Perform();
         } else
         {
-            endcriptionLose.Perfrom();
+            endcriptionLose.Perform();
         }
     }
 
