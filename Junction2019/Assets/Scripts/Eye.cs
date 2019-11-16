@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Eye : MonoBehaviour
 {
-    void Update()
+    public bool lookedAt = false;
+
+    void LateUpdate()
     {
-        transform.LookAt(Varjo.VarjoManager.Instance.HeadTransform);
+        if (!lookedAt)
+        {
+            transform.LookAt(Varjo.VarjoManager.Instance.HeadTransform);
+        }
     }
 }
