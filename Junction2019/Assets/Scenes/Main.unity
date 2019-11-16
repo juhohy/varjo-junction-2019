@@ -1506,6 +1506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StareTest
       objectReference: {fileID: 0}
+    - target: {fileID: 1686238421195801527, guid: f3de6e6a1ea77ba40907fdd39dceea10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1935031209429633471, guid: f3de6e6a1ea77ba40907fdd39dceea10,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1589,7 +1594,7 @@ PrefabInstance:
     - target: {fileID: 4565137378097258720, guid: a0c08789420f27a4abd8fbc74724fcc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4565137378097258735, guid: a0c08789420f27a4abd8fbc74724fcc1,
         type: 3}
@@ -1670,6 +1675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: End
       objectReference: {fileID: 0}
+    - target: {fileID: 5971161730351772670, guid: f090907111178864fa45d7b216d9ee9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5971161730351772669, guid: f090907111178864fa45d7b216d9ee9d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1743,6 +1753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GazeCal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243395417564048958, guid: 0ba2d6913c8a80e46ba9994de4ce6a0a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6243395417564048953, guid: 0ba2d6913c8a80e46ba9994de4ce6a0a,
         type: 3}
@@ -1828,6 +1843,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intro
       objectReference: {fileID: 0}
+    - target: {fileID: 7215616860951615651, guid: a523505437f0422438ce0ce41b66a222,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7215616860951615662, guid: a523505437f0422438ce0ce41b66a222,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1901,6 +1921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InkCards
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594853532167123131, guid: 607f11e99a9c32e428c5e20a934676c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594853532167123134, guid: 607f11e99a9c32e428c5e20a934676c8,
         type: 3}
