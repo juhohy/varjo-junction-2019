@@ -9,13 +9,13 @@ public class ScenarioManager : MonoBehaviour
     int currentScenario = 0;
     public List<GameObject> scenarios = new List<GameObject>();
     public List<AudioClip> scenarioMusics = new List<AudioClip>();
+    public List<float> scenarioMusicVolumes = new List<float>();
     AudioSource musicSource;
 
     void Awake()
     {
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.loop = true;
-        musicSource.volume = 0.3f;
         Invoke("LoadCurrentScenario", startDelay);
     }
 
@@ -45,6 +45,7 @@ public class ScenarioManager : MonoBehaviour
         {
             Debug.Log("Playing scenario music: " + scenarioMusics[currentScenario].name);
             musicSource.clip = scenarioMusics[currentScenario];
+            musicSource.volume = scenarioMusicVolumes[currentScenario];
             musicSource.Play();
         }
     }
