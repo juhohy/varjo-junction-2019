@@ -19,7 +19,7 @@ public class TalkAndDo : MonoBehaviour
     private void PerformDelayed()
     {
         Bartender.Instance.talk = true;
-        AudioManager.Instance.PlaySound(talkClip, transform.position);
+        AudioManager.Instance.PlaySound(talkClip, Bartender.Instance.transform.position + Vector3.up * 1.8f);
         Invoke("Do", talkClip.length + waitAfter);
     }
 
