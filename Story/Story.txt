@@ -1,0 +1,43 @@
+Intro
+Nice to see some one here! Please, take a look around you. There is not much customers here. Well while we have a moment here we could do a few quizzes to make this time pass. 
+Seems that you don’t have anything else to do so I’ll do the whole repertoire! Okay then!
+This is called the Jarry’s Leisure Research Quiz. We are
+We will try to investigate your relatedness to the Jarry itself.
+Now please calm down, forget all everyday stressing businesses, breathe in and let’s continue in to the quizzes.
+
+GazeIntro
+To make the quiz better we are now calibrating the eye tracking SO! Please follow the point in front of you with your eyes. Don’t look anything else.
+
+GazeOutro
+Great job! You did it! Following a ball is an extremely hard job in these nervous times.
+
+InkIntro
+I will place pictures in front of you and look them freely some time.
+
+InkOutro
+Okay! I see what kind of stuff goes on in that dirty mind! Thanks for watching the pictures. Now I certainly understand more about you. And why you came to this place.
+
+GorillaIntro
+I have another quiz for you. Could you kindly count how many times the bee touches the flowers, if it’s not too much asked? Just try to concentrate to the bee and counting. Do you think you are able to do two things simultaneously. 
+
+GorillaInbetween
+Okay then! That went pleasantly! Just insert the amount of times the bee touched the flowers with the two buttons. Thank you very much for your collaboration your highness.
+
+GorillaCorrect
+Thats correct! You made a perfect calculation. Your skill of counting is strong as a bear! Im lucky to be alive while witnessing such a strong mind!
+
+GorillaWrong
+Last time that I checked one plus one is two or do you have some news to me? Sorry to tell you but you failed! But I see the reason behind.
+
+StareIntro
+There is a video that we’d like you to watch. But there is an exception! Because we want you to watch the whole video without closing your eyes.Of course if your eyes start to get hurting then you should close them.
+
+StareWin
+Great! You are one step more ahead closer to Jarry’s mind. This is excellent!
+
+StareLose
+Well, I’ve seen better performances. Hope that you had a restful time while closing those beautiful eyes of yours.
+
+End
+I think we are all done here! Do you think you are related to Jarry? Well now that all the quiz is over are done you will see it for your self!
+Enjoy the marvellous results. It was a pleasure to do the quiz for you.
