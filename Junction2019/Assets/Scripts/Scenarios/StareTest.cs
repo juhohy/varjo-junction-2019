@@ -11,6 +11,8 @@ public class StareTest : MonoBehaviour
     public GameObject video;
     public VideoPlayer videoPlayer;
     public float testTime = 240.0f;
+    public GameObject[] viveModels;
+    public GameObject[] micModels;
     int timesBlinked;
 
     private void OnEnable()
@@ -24,6 +26,12 @@ public class StareTest : MonoBehaviour
     {
         video.SetActive(true);
         videoPlayer.Play();
+        foreach(var go in viveModels) {
+            go.SetActive(false);
+        }
+        foreach(var go in micModels) {
+            go.SetActive(true);
+        }
         Invoke("HideVideo", testTime);
     }
 
@@ -31,6 +39,14 @@ public class StareTest : MonoBehaviour
     {
         videoPlayer.Stop();
         video.SetActive(false);
+        foreach (var go in viveModels)
+        {
+            go.SetActive(true);
+        }
+        foreach (var go in micModels)
+        {
+            go.SetActive(false);
+        }
         if (timesBlinked <= 3)
         {
             endcriptionWin.Perform();
@@ -50,7 +66,7 @@ public class StareTest : MonoBehaviour
         } else if(!videoPlayer.isPlaying && isTracking)
         {
             videoPlayer.Play();
-            videoPlayer.time = 7.0;
+            videoPlayer.time = 0.0;
         }
     }
 }
